@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Miller Animaton
+	</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="milleranimation/milleranimation.css">
+	<script src="milleranimation/milleranimation.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+<body onload="setInterval('hhhh(window.innerHeight)', 100)">
+	<div id="wrapper">
+		<div id="container">
+			<div id="content">
+				<div class="tab" id="tab1">
+					<h2>Miller Animation</h2>
+					<p>Miller Animation - image animation framework</p>
+					<h2>How to use</h2>
+					<p><ul>
+						<li>Download lastes version
+						<li>Extract zip
+						<li>connect .css and .js file
+							<div class="code">
+								<img src = "img/example.png">	
+							</div>
+						<li>function <i>milleranimate()</i>
+							<div class="code">
+								<img src = "img/example2.png">	
+							</div>
+							<i>id</i> - animated image id <br>
+							<i>src</i> - new image src <br>
+							<i>effect</i> - effect
+						</ul></p>
+				</div>
+				<div class="tab" id="tab2">
+					<h2>Download</h2>
+					<p>
+						<i>18.08.2014</i> - <a href="#">version 1.0</a><br>
+					</p>
+				</div>
+			</div>
+			<div id="menu">
+				<div id ="logo">
+					<img class="logo" src="img/logo.png">
+				</div>
+				<div id="links">
+					<div class="button" onclick = "tab1(); totop()">
+						Main
+					</div>
+					<div class="button" onclick = "tab2(); totop()">
+						Download
+					</div>
+					<div class="button" id="bGal" onclick="tobot()">
+						Action review
+					</div>
+				</div>
+				<div id="chose">
+					<div id="list">
+							<select id="input" >
+								<option value="circle">circle</option>
+								<option value="verticalStripes">verticalStripes</option>
+								<option value="overlayLeft">overlayLeft</option>
+								<option value="overlayRight">overlayRight</option>
+								<option value="overlayDown">overlayDown</option>
+								<option value="overlayUp">overlayUp</option>
+								<option value="curtain">curtain</option>
+								<option value="slideToLeft">slideToLeft</option>
+								<option value="slideToRight">slideToRight</option>
+								<option value="discoloration">discoloration</option>
+								<option value="a11">a11</option>
+								<option value="a12">a12</option>
+								<option value="a13">a13</option>
+								<option value="a14">a14</option>
+								<option value="a15">a15</option>
+							</select>
+						</div> 
+				</div>
+			</div>
+			<div id="galery">
+				<div id="image">
+					<div id="navigation">
+						<div id="navLeft" class="navigation" onclick="pred()"><img src="img/l.png"></div>
+						<div class="navigation" id="navRight" onclick="next()"><img src="img/r.png"></div>
+					</div>
+					<img id ="img" src="img/i1.jpg"> 
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
